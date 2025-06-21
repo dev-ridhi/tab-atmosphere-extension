@@ -53,7 +53,6 @@ tab-atmosphere-extension/
 ├── icons/ # Extension icon(s)
 └── sounds/ # Default ambient sound files
 
-
 ---
 
 ## 🙌 Collaborators
