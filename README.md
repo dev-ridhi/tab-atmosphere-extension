@@ -42,8 +42,8 @@ A Chrome extension that brings personalized ambient soundscapes to your browser 
 ---
 
 ## 🗃 Project Structure 
-``` tab-atmosphere-extension/
-│
+```
+│ tab-atmosphere-extension/
 ├── manifest.json # Chrome extension manifest (v3)
 ├── background.js # Handles sound mapping & persistent timer logic
 ├── content.js # Runs in tabs, plays/stops audio
