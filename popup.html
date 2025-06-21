@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Atmosphere</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>🎧 Tab Atmosphere</h1>
+
+  <label for="sound-select">Choose a sound:</label>
+  <select id="sound-select">
+    <option value="sounds/ambient.mp3">Ambient</option>
+    <option value="sounds/focus.mp3">Focus</option>
+    <option value="sounds/nature.mp3">Nature</option>
+    <option value="sounds/rain.mp3">Rain</option>
+  </select>
+
+  <input type="file" id="custom-sound" accept=".mp3,.ogg,.wav" />
+  <label for="volume-control">Volume:</label>
+  <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.4" />
+
+  <button id="assign-sound">Assign to Current Tab</button>
+  <button id="stop-sound">Stop Sound</button>
+
+  <hr />
+
+  <h2>⏱ Pomodoro Timer</h2>
+
+  <label>Focus Duration (min): <input type="number" id="focus-duration" value="25" min="1" max="120" /></label>
+  <label>Break Duration (min): <input type="number" id="break-duration" value="5" min="1" max="60" /></label>
+
+  <div id="timer-display">25:00</div>
+  <button id="start-timer">Start</button>
+  <button id="pause-timer">Pause</button>
+  <button id="stop-timer">Stop</button>
+
+  <p id="focus-summary"></p>
+
+  <hr />
+  <label>
+    <input type="checkbox" id="dark-mode-toggle" />
+    🌙 Dark Mode
+  </label>
+
+  <script src="popup.js"></script>
+</body>
+</html>
